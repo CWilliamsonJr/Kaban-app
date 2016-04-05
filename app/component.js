@@ -2,7 +2,7 @@
 
 module.exports = function () {
     let element = document.createElement('h1');
-    element.innerHTML = 'hellow world';
+    element.innerHTML = 'hello world';
     
     return element;
 }
