@@ -4,6 +4,8 @@ const TARGET = process.env.npm_lifecycle_event;
 const webpack = require('webpack');
 const NpmInstallPlugin = require('npm-install-webpack-plugin');
 
+process.env.BABEL_ENV=TARGET;
+
 const PATHS = {
     app: path.join(__dirname, 'app'),
     build: path.join(__dirname, 'build')
